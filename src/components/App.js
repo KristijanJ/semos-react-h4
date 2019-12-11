@@ -49,6 +49,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route
+            exact
             path="/semos-react-h4/"
             render={() => {
               return <Posts postslist={this.state.posts} />
