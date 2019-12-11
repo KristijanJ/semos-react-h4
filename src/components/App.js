@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Users from "./Users";
+import Posts from "./Posts";
 import Gallery from "./Gallery";
 import { API_URL } from "../constants";
 import { Route, Switch, Link } from "react-router-dom";
@@ -40,7 +40,7 @@ class App extends Component {
             exact
             path="/"
             render={() => {
-              return <Users postslist={this.state.posts} />
+              return <Posts postslist={this.state.posts} />
             }}
           />
           <Route path="/gallery" component={Gallery} />
