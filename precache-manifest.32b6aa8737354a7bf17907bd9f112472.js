@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed133a2f0802fb22171d67d62432d9c8",
+    "revision": "37d9386b9d364e3afe64978b2e41f346",
     "url": "/semos-react-h4/index.html"
   },
   {
-    "revision": "d6c184299a9bd0ceadd4",
+    "revision": "a97dcab22c511bc56976",
     "url": "/semos-react-h4/static/css/main.f18aeebd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/semos-react-h4/static/js/2.2e2ffb03.chunk.js.LICENSE"
   },
   {
-    "revision": "d6c184299a9bd0ceadd4",
-    "url": "/semos-react-h4/static/js/main.20ee5a9d.chunk.js"
+    "revision": "a97dcab22c511bc56976",
+    "url": "/semos-react-h4/static/js/main.362cb175.chunk.js"
   },
   {
     "revision": "c89e098c026e0b496e36",
