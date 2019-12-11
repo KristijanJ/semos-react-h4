@@ -1,5 +1,91 @@
-.darkBG {
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.loading {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  width: 100%;
+  height: 9vh;
+  background: #333;
+  color: #fff;
+  margin-bottom: 1vh;
+}
+
+.nav ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul li {
+  padding: 0 2rem;
+}
+
+.nav ul li:hover a {
+  text-decoration: underline;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.tableContainer {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableHeader {
   background: #333;
   color: #fff;
   text-transform: uppercase;
+  padding: 1rem;
+}
+
+.tableRow {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.tableData {
+  color: #464646;
+  text-transform: capitalize;
+  border-right: 1px solid #e2e2e2;
+  padding: 0.5rem;
+}
+
+.tableData:last-child {
+  border-right: 0 solid #e2e2e2;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.table {
+  border: 1px solid #e2e2e2;
 }

@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import axios from "axios";
 import Posts from "./Posts";
 import Gallery from "./Gallery";
+import Header from "./Header";
 import { API_URL } from "../constants";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -45,10 +46,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/gallery">Gallery</Link></li>
-        </ul>
+        <Header />
         <Switch>
           <Route
             exact

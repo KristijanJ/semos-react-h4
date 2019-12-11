@@ -4,20 +4,26 @@ import styles from "../mystyle.module.css";
 
 const Posts = props => {
   return props.postslist.length > 0 ? (
-    <table border="1" cellPadding="10">
-      <thead>
-        <tr>
-          <th className={styles.darkBG}>ID</th>
-          <th className={styles.darkBG}>Title</th>
-          <th className={styles.darkBG}>Post</th>
-        </tr>
-      </thead>
-      <tbody>
-        {props.postslist.map((post, id) => <Post key={id} post={post} />)}
-      </tbody>
-    </table>
+    <div className={styles.tableContainer}>
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th className={styles.tableHeader}>ID</th>
+            <th className={styles.tableHeader}>Title</th>
+            <th className={styles.tableHeader}>Post</th>
+          </tr>
+        </thead>
+        <tbody>
+          {props.postslist.map((post, id) => (
+            <Post key={id} post={post} />
+          ))}
+        </tbody>
+      </table>
+    </div>
   ) : (
-    <h2>Loading...</h2>
+    <div className={styles.loading}>
+      <h2>Loading...</h2>
+    </div>
   );
 };
 
