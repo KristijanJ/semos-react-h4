@@ -7,10 +7,10 @@ export default function Header() {
     <header className={styles.nav}>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/semos-react-h4/">Home</Link>
         </li>
         <li>
-          <Link to="/gallery">Gallery</Link>
+          <Link to="/semos-react-h4/gallery">Gallery</Link>
         </li>
       </ul>
     </header>

@@ -49,13 +49,12 @@ class App extends Component {
         <Header />
         <Switch>
           <Route
-            exact
-            path="/"
+            path="/semos-react-h4/"
             render={() => {
               return <Posts postslist={this.state.posts} />
             }}
           />
-          <Route path="/gallery" render={() => {
+          <Route path="/semos-react-h4/gallery" render={() => {
             return <Gallery photoslist={this.state.photos} />
           }} />
         </Switch>
