@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/semos-react-h4/static/css/main.f18aeebd.chunk.css",
+    "main.js": "/semos-react-h4/static/js/main.d47f942d.chunk.js",
+    "main.js.map": "/semos-react-h4/static/js/main.d47f942d.chunk.js.map",
+    "runtime-main.js": "/semos-react-h4/static/js/runtime-main.fd2a4c29.js",
+    "runtime-main.js.map": "/semos-react-h4/static/js/runtime-main.fd2a4c29.js.map",
+    "static/js/2.2e2ffb03.chunk.js": "/semos-react-h4/static/js/2.2e2ffb03.chunk.js",
+    "static/js/2.2e2ffb03.chunk.js.map": "/semos-react-h4/static/js/2.2e2ffb03.chunk.js.map",
+    "index.html": "/semos-react-h4/index.html",
+    "precache-manifest.f2dd08aa3f18d0382fbbae8fe1a42ec1.js": "/semos-react-h4/precache-manifest.f2dd08aa3f18d0382fbbae8fe1a42ec1.js",
+    "service-worker.js": "/semos-react-h4/service-worker.js",
+    "static/css/main.f18aeebd.chunk.css.map": "/semos-react-h4/static/css/main.f18aeebd.chunk.css.map",
+    "static/js/2.2e2ffb03.chunk.js.LICENSE": "/semos-react-h4/static/js/2.2e2ffb03.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd2a4c29.js",
+    "static/js/2.2e2ffb03.chunk.js",
+    "static/css/main.f18aeebd.chunk.css",
+    "static/js/main.d47f942d.chunk.js"
+  ]
+}
