@@ -9,7 +9,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: []
+      posts: [],
+      photos: []
     };
   }
 
@@ -24,8 +25,21 @@ class App extends Component {
       });
   };
 
+  fetchPhotos = () => {
+    axios
+      .get(API_URL + "/photos")
+      .then(res => {
+        let first10Photos = res.data.slice(0, 10);
+        this.setState({ photos: first10Photos });
+      })
+      .catch(err => {
+        console.error("Error in =>", err);
+      });
+  }
+
   componentDidMount() {
     this.fetchPosts();
+    this.fetchPhotos();
   }
 
   render() {
@@ -43,7 +57,9 @@ class App extends Component {
               return <Posts postslist={this.state.posts} />
             }}
           />
-          <Route path="/gallery" component={Gallery} />
+          <Route path="/gallery" render={() => {
+            return <Gallery photoslist={this.state.photos} />
+          }} />
         </Switch>
       </div>
     );

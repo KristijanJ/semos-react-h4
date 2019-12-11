@@ -1,11 +1,22 @@
-import React, { Component } from 'react'
+import React from "react";
+import Photo from "./Photo";
+import styles from "../mystyle.module.css";
 
-export default class Gallery extends Component {
-  render() {
-    return (
-      <div>
-        Hello from Gallery
-      </div>
-    )
-  }
-}
+const Gallery = props => {
+  return (
+    <table border="1" cellPadding="10">
+      <thead>
+        <tr>
+          <th className={styles.darkBG}>ID</th>
+          <th className={styles.darkBG}>Title</th>
+          <th className={styles.darkBG}>IMG</th>
+        </tr>
+      </thead>
+      <tbody>
+        {props.photoslist.map((photo, id) => <Photo key={id} photo={photo} />)}
+      </tbody>
+    </table>
+  );
+};
+
+export default Gallery;
