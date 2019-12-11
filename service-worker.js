@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/semos-react-h4/precache-manifest.f2dd08aa3f18d0382fbbae8fe1a42ec1.js"
+  "/semos-react-h4/precache-manifest.1592b54f61e71a287fa9fdd7faa8bf69.js"
 );
 
 self.addEventListener('message', (event) => {
