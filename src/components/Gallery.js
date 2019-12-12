@@ -1,10 +1,11 @@
 import React from "react";
 import Photo from "./Photo";
+import Popup from "./Popup";
 import styles from "../mystyle.module.css";
 
 const Gallery = props => {
   return props.photoslist.length > 0 ? (
-    <div className={styles.tableContainer}>
+    <div className={styles.tableContainer} id="gallery">
       <table className={styles.table}>
         <thead>
           <tr>
@@ -14,11 +15,15 @@ const Gallery = props => {
           </tr>
         </thead>
         <tbody>
-          {props.photoslist.map((photo, id) => (
-            <Photo key={id} photo={photo} />
+          {props.photoslist.slice(0, 10).map((photo, id) => (
+            <Photo openPhoto={props.openPhoto} key={id} photo={photo} />
           ))}
         </tbody>
       </table>
+
+      {props.popupPhoto ? (
+        <Popup closePhoto={props.closePhoto} photoUrl={props.popupPhoto} />
+      ) : null}
     </div>
   ) : (
     <div className={styles.loading}>

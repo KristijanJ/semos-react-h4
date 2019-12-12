@@ -54,6 +54,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .tableHeader {
@@ -88,4 +89,54 @@ table {
 
 .table {
   border: 1px solid #e2e2e2;
+}
+
+.imageHolder {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+}
+
+.imageHolder:hover {
+  transform: scale(1.05);
+}
+
+.popup {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000000b0;
+}
+
+.closePopup {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background: #e63333;
+}
+
+.popupContainer {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.popupContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

@@ -11,7 +11,8 @@ class App extends Component {
     super(props);
     this.state = {
       posts: [],
-      photos: []
+      photos: [],
+      popupPhoto: ""
     };
   }
 
@@ -30,12 +31,20 @@ class App extends Component {
     axios
       .get(API_URL + "/photos")
       .then(res => {
-        let first10Photos = res.data.slice(0, 10);
-        this.setState({ photos: first10Photos });
+        this.setState({ photos: res.data });
       })
       .catch(err => {
         console.error("Error in =>", err);
       });
+  }
+
+  openPhoto = photoUrl => {
+    console.log(photoUrl);
+    this.setState({ popupPhoto: photoUrl });
+  }
+
+  closePhoto = () => {
+    this.setState({ popupPhoto: '' });
   }
 
   componentDidMount() {
@@ -56,7 +65,14 @@ class App extends Component {
             }}
           />
           <Route path="/semos-react-h4/gallery" render={() => {
-            return <Gallery photoslist={this.state.photos} />
+            return (
+              <Gallery
+                openPhoto={this.openPhoto}
+                photoslist={this.state.photos}
+                popupPhoto={this.state.popupPhoto}
+                closePhoto={this.closePhoto}
+              />
+            );
           }} />
         </Switch>
       </div>
